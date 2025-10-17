@@ -18,6 +18,12 @@ int main() {
                 printf("Errore: divisione per zero\n");
             break;
         default: printf("Operatore non valido\n");
+        case '%':
+            if (b != 0)
+                printf(&quot;Risultato: %d\n&quot;, a % b);
+            else
+                printf(&quot;Errore: modulo per zero\n&quot;);
+            break;
     }
 
     return 0;
